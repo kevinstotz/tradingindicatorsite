@@ -15,13 +15,13 @@
 .form {
   position: relative;
   z-index: 1;
-  background: #48c9b0;
+  background: #478ac9;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  
+
 }
 .form input {
   font-family: FontAwesome, "Roboto", sans-serif;
@@ -34,7 +34,7 @@
   box-sizing: border-box;
   font-size: 14px;
 border-radius:10px;
-  
+
 }
 .form button {
   font-family: "Titillium Web", sans-serif;
@@ -67,15 +67,15 @@ border-radius:30px;
 }
 
 .form .message {
-  
+
   margin: 6px 6px;
-  color: #808080;
+  color: #478ac9;
   font-size: 11px;
   text-align: center;
   font-weight: bold;
   font-style: normal;
 
-  
+
 
 }
 .form .message a {
@@ -106,7 +106,7 @@ border-radius:30px;
   padding: 0;
   font-size: 36px;
   font-weight: 300;
-  color: #1a1a1a;
+  color: #478ac9;
 }
 .container .info span {
   color: #4d4d4d;
@@ -117,5 +117,5 @@ border-radius:30px;
   text-decoration: none;
 }
 .container .info span .fa {
-  color: #EF3B3A;
+  color: #478ac9;
 }
