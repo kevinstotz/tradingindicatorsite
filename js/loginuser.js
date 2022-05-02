@@ -56,7 +56,7 @@
              //add new user to user array
 
              $.ajax({
-                 url: 'http://127.0.0.1:3000/users/login',
+                 url: 'http://trading.yogishouse.com/users/login',
                  headers: {
                   'Content-Type': 'application/json; charset=utf-8',
                   'Access-Control-Allow-Origin': '*',
