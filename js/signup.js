@@ -96,7 +96,7 @@
              password.style.borderColor = "#ccc";
          }
 
-         if(is_valid){
+         if (is_valid) {
 
              //check existing users
              if(localStorage.myUsersList === undefined){
@@ -128,22 +128,13 @@
                  dataType: 'json',
                  data: JSON.stringify(newUser),
                  success: function (response) {
-                     console.log(response);
+                     //localStorage.myUsersList = JSON.stringify(newUser);
+                     alert(Your account has been created");
+                     window.location.href = "http://indicators.yogisminter.com/login";
                  },
                  error: function (error) {
                      console.log(error);
                  }
              });
-             // $.post("http://127.0.0.1:3000/users", JSON.stringify(users), function(data) {
-             //     alert(data);
-             // });
-             localStorage.myUsersList = JSON.stringify(newUser);
-             alert("your account has been created");
-             console.log(localStorage.myUsersList);
-
-
-         } else {
-
          }
-
      }
