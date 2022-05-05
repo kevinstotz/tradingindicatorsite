@@ -118,7 +118,7 @@
              //add new user to user array
 
              $.ajax({
-                 url: 'http://trading.yogisminter.com/users/register',
+                 url: 'http://indicators.yogisminter.com/users/register',
                  headers: {
                   'Content-Type': 'application/json; charset=utf-8',
                   'Access-Control-Allow-Origin': '*',
