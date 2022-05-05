@@ -56,7 +56,7 @@
              //add new user to user array
 
              $.ajax({
-                 url: 'http://trading.yogishouse.com/users/login',
+                 url: 'http://127.0.0.1:3000/users/authenticate',
                  headers: {
                   'Content-Type': 'application/json; charset=utf-8',
                   'Access-Control-Allow-Origin': '*',
@@ -67,22 +67,14 @@
                  data: JSON.stringify(newUser),
                  success: function (response) {
                      newUser = {
-                         "email" : email.value,
-                         "id" : response.id
+                         "uuid" : response.uuid
                      }
-                     localStorage.user = JSON.stringify(newUser);
-                     alert("You logged in");
-                     console.log(localStorage.myUsersList);
+                     localStorage.uuid =  response.uuid;
+                     postLogin(response.uuid.trim(response.uuid))
                  },
                  error: function (error) {
                      console.log(error);
                  }
              });
-
-
-
-         } else {
-
          }
-
      }
