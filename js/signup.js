@@ -129,7 +129,7 @@
                  data: JSON.stringify(newUser),
                  success: function (response) {
                      //localStorage.myUsersList = JSON.stringify(newUser);
-                     alert(Your account has been created");
+                     alert("Your account has been created");
                      window.location.href = "http://indicators.yogisminter.com/login";
                  },
                  error: function (error) {
